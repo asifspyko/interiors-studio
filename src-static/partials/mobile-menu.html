@@ -1,0 +1,69 @@
+<nav
+  class="js-nav fixed right-0 top-0 bottom-0 w-screen z-20 transition-all duration-300 transform -translate-y-full xs:translate-y-0 xs:translate-x-full bg-white xs:max-w-mobile-menu-xs">
+  <div class="js-nav-wrap h-full">
+    <div class="pt-5 lg:pt-5 h-full overflow-auto">
+      <div class="h-full flex flex-col divide-y divide-gray-200 relative">
+        <div class="min-h-0 flex-1 overflow-y-scroll js-main-menu-mobile-scroll">
+          <div class="l-wrap mb-8">
+            <ul class="flex m-0 p-0">
+              <li class="mr-4"><img src="assets/img/flags/en.svg" height="32" alt="en" width="32" class=""></li>
+              <li class="mr-4"><a href="#"><img src="assets/img/flags/de.svg" height="32" alt="de" width="32"
+                    class=""></a></li>
+            </ul>
+          </div>
+
+          <div class="l-wrap mt-2 mb-8">
+            <form action="/" method="get" class="relative">
+              <input type="text" class="form-input pl-11" placeholder="Search" name="s" id="search" value="" />
+              <svg class="absolute left-0 top-0 w-6 h-6 text-brand ml-3 mt-3" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </form>
+          </div>
+
+          <div class="l-wrap">
+            <ul id="menu-primary-1" class="c-mobile-menu">
+              <li id="menu-item-132" class="menu-item current-menu-item"><a href="index.html"
+                  aria-current="page">Home</a></li>
+              <li id="menu-item-133" class="menu-item menu-item-has-children"><a href="#">Parent Page</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-134" class="menu-item"><a href="subpage.html">Subpage</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center w-full flex-shrink-0 bg-white relative bottom-inset-shadow">
+          <div class="py-2">
+            <a class="text-gray-600 text-20 hover:no-underline" href="tel:123456789"><i class="fas fa-phone-alt"></i>
+              123456789</a>
+          </div>
+          <div class="border-t">
+            <ul class="flex justify-center pt-2">
+              <li class="ml-3">
+                <a class="bg-gray-600 w-10 h-10 text-white text-16 flex justify-center items-center rounded-full hover:bg-brand hover:text-white hover:no-underline"
+                  href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="ml-3">
+                <a class="bg-gray-600 w-10 h-10 text-white text-16 flex justify-center items-center rounded-full hover:bg-brand hover:text-white hover:no-underline"
+                  href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="ml-3">
+                <a class="bg-gray-600 w-10 h-10 text-white text-16 flex justify-center items-center rounded-full hover:bg-brand hover:text-white hover:no-underline"
+                  href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,179 @@
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-demi {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-overflow {
+  @extend .text-overflow;
+}
+
+.heading-font {
+  font-family: $heading_font;
+}
+
+.font-secondary {
+  font-family: $secondary_font;
+}
+
+a,
+.nav-link {
+  transition: 0.2s all ease;
+  color: inherit;
+
+  &:hover {}
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.65px;
+  font-family: $heading_font;
+  line-height: normal;
+}
+
+h1,
+.h1 {
+  font-size: 65px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 36px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 48px;
+  letter-spacing: 0.48px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 38px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 35px;
+  letter-spacing: 0.35px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+  }
+
+  &.h3-lg {}
+}
+
+h4,
+.h4 {}
+
+h5,
+.h5 {
+  font-size: 24px;
+  line-height: 117.316%;
+  letter-spacing: 4.8px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: $secondary_font;
+  line-height: 1.15;
+
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.copy-sm {
+  font-size: 14px;
+}
+
+.btn {
+  transition: 0.2s all ease;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  @extend .fw-bold;
+  border-radius: 100px;
+  border: 3px solid;
+  padding: 25px 40px;
+  line-height: normal;
+  @extend .font-secondary;
+
+  @include media-breakpoint-down(xl) {
+    padding: 20px 30px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+
+  &-reset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  &.min-w-180 {
+    min-width: 180px;
+  }
+}

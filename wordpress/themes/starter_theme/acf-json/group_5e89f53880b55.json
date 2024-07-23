@@ -1,0 +1,260 @@
+{
+    "key": "group_5e89f53880b55",
+    "title": "Settings - Animations",
+    "fields": [
+        {
+            "key": "field_5e89f544ca12f",
+            "label": "<span class=\"dashicons dashicons-backup\"><\/span> Animations",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8af0598431a",
+            "label": "Enable animations",
+            "name": "settings_enable_animations",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e8af0801538f",
+            "label": "Animation type",
+            "name": "settings_animation_type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e8af0598431a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "fade": "fade",
+                "fade-up": "fade-up",
+                "fade-down": "fade-down",
+                "fade-left": "fade-left",
+                "fade-right": "fade-right",
+                "fade-up-right": "fade-up-right",
+                "fade-up-left": "fade-up-left",
+                "fade-down-right": "fade-down-right",
+                "fade-down-left": "fade-down-left",
+                "flip-up": "flip-up",
+                "flip-down": "flip-down",
+                "flip-left": "flip-left",
+                "flip-right": "flip-right",
+                "slide-up": "slide-up",
+                "slide-down": "slide-down",
+                "slide-left": "slide-left",
+                "slide-right": "slide-right",
+                "zoom-in": "zoom-in",
+                "zoom-in-up": "zoom-in-up",
+                "zoom-in-down": "zoom-in-down",
+                "zoom-in-left": "zoom-in-left",
+                "zoom-in-right": "zoom-in-right",
+                "zoom-out": "zoom-out",
+                "zoom-out-up": "zoom-out-up",
+                "zoom-out-down": "zoom-out-down",
+                "zoom-out-left": "zoom-out-left",
+                "zoom-out-right": "zoom-out-right"
+            },
+            "default_value": "fade-up",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e8af0d615390",
+            "label": "Easing",
+            "name": "settings_easing",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e8af0598431a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "linear": "linear",
+                "ease": "ease",
+                "ease-in": "ease-in",
+                "ease-out": "ease-out",
+                "ease-in-out": "ease-in-out",
+                "ease-in-back": "ease-in-back",
+                "ease-out-back": "ease-out-back",
+                "ease-in-out-back": "ease-in-out-back",
+                "ease-in-sine": "ease-in-sine",
+                "ease-out-sine": "ease-out-sine",
+                "ease-in-out-sine": "ease-in-out-sine",
+                "ease-in-quad": "ease-in-quad",
+                "ease-out-quad": "ease-out-quad",
+                "ease-in-out-quad": "ease-in-out-quad",
+                "ease-in-cubic": "ease-in-cubic",
+                "ease-out-cubic": "ease-out-cubic",
+                "ease-in-out-cubic": "ease-in-out-cubic",
+                "ease-in-quart": "ease-in-quart",
+                "ease-out-quart": "ease-out-quart",
+                "ease-in-out-quart": "ease-in-out-quart"
+            },
+            "default_value": "ease-in-out",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e8af10215391",
+            "label": "Duration",
+            "name": "settings_duration",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e8af0598431a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": 600,
+            "min": 0,
+            "max": 5000,
+            "step": 10,
+            "prepend": "",
+            "append": "ms"
+        },
+        {
+            "key": "field_5e8af15415392",
+            "label": "Delay",
+            "name": "settings_delay",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e8af0598431a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": 0,
+            "min": 0,
+            "max": 5000,
+            "step": 10,
+            "prepend": "",
+            "append": "ms"
+        },
+        {
+            "key": "field_5e8af1951234d",
+            "label": "Offset",
+            "name": "settings_offset",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e8af0598431a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": 200,
+            "min": 0,
+            "max": 1000,
+            "step": 10,
+            "prepend": "",
+            "append": "px"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "<strong>Animation settings for blocks.<\/strong> <br>It's cloned into \"Settings - All\" group. <br>Do not remove this group.",
+    "modified": 1637239099
+}

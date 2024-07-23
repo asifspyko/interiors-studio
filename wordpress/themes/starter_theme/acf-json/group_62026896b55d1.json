@@ -1,0 +1,934 @@
+{
+    "key": "group_62026896b55d1",
+    "title": "Site Settings - Rich Snippets",
+    "fields": [
+        {
+            "key": "field_620268a65405a",
+            "label": "Local Business",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_620268ebd11e9",
+            "label": "Status",
+            "name": "local_business_status",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enabled",
+            "ui_off_text": "Disabled"
+        },
+        {
+            "key": "field_620269ea7255e",
+            "label": "Assign to the following pages",
+            "name": "local_business_assign_to_the_following_pages",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_62026b0e8b192",
+            "label": "Type",
+            "name": "local_business_type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "LocalBusiness": "LocalBusiness",
+                "AnimalShelter": "AnimalShelter",
+                "ArchiveOrganization": "ArchiveOrganization",
+                "AutomotiveBusiness": "AutomotiveBusiness",
+                "ChildCare": "ChildCare",
+                "Dentist": "Dentist",
+                "DryCleaningOrLaundry": "DryCleaningOrLaundry",
+                "EmergencyService": "EmergencyService",
+                "EmploymentAgency": "EmploymentAgency",
+                "EntertainmentBusiness": "EntertainmentBusiness",
+                "FinancialService": "FinancialService",
+                "FoodEstablishment": "FoodEstablishment",
+                "GovernmentOffice": "GovernmentOffice",
+                "HealthAndBeautyBusiness": "HealthAndBeautyBusiness",
+                "HomeAndConstructionBusiness": "HomeAndConstructionBusiness",
+                "InternetCafe": "InternetCafe",
+                "LegalService": "LegalService",
+                "Library": "Library",
+                "LodgingBusiness": "LodgingBusiness",
+                "MedicalBusiness": "MedicalBusiness",
+                "ProfessionalService": "ProfessionalService",
+                "RadioStation": "RadioStation",
+                "RealEstateAgent": "RealEstateAgent",
+                "RecyclingCenter": "RecyclingCenter",
+                "SelfStorage": "SelfStorage",
+                "ShoppingCenter": "ShoppingCenter",
+                "SportsActivityLocation": "SportsActivityLocation",
+                "Store": "Store",
+                "TelevisionStation": "TelevisionStation",
+                "TouristInformationCenter": "TouristInformationCenter",
+                "TravelAgency": "TravelAgency"
+            },
+            "default_value": "LocalBusiness",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62027151ca55c",
+            "label": "Name",
+            "name": "local_business_name",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62038dadcf483",
+            "label": "Image",
+            "name": "local_business_image",
+            "type": "image",
+            "instructions": "Website cover (can be the same as cover for social media)",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_620273511132f",
+            "label": "Telephone",
+            "name": "local_business_telephone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620272002aa5f",
+            "label": "Address Locality",
+            "name": "local_business_address_locality",
+            "type": "text",
+            "instructions": "City",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620272aa1d6fe",
+            "label": "Address Region",
+            "name": "local_business_address_region",
+            "type": "text",
+            "instructions": "Region",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620272c91d6ff",
+            "label": "Postal Code",
+            "name": "local_business_postal_code",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620272db1d700",
+            "label": "Street Address",
+            "name": "local_business_street_address",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62038087a6ccc",
+            "label": "Country",
+            "name": "local_business_address_country",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620273224b5db",
+            "label": "Price Range",
+            "name": "local_business_price_range",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62027427aea81",
+            "label": "Opening Hours",
+            "name": "opening_hours",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Monday": "Monday",
+                "Tuesday": "Tuesday",
+                "Wednesday": "Wednesday",
+                "Thursday": "Thursday",
+                "Friday": "Friday",
+                "Saturday": "Saturday",
+                "Sunday": "Sunday"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_62027515aea82",
+            "label": "Monday - Opening Hour",
+            "name": "monday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Monday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_6202758aaea85",
+            "label": "Monday - Closing Hour",
+            "name": "monday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Monday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620276524805b",
+            "label": "Tuesday - Opening Hour",
+            "name": "tuesday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Tuesday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620276634805c",
+            "label": "Tuesday - Closing Hour",
+            "name": "tuesday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Tuesday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620276c332ecd",
+            "label": "Wednesday - Opening Hour",
+            "name": "wednesday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Wednesday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620276c732ece",
+            "label": "Wednesday - Closing Hour",
+            "name": "wednesday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Wednesday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620277909af59",
+            "label": "Thursday - Opening Hour",
+            "name": "thursday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Thursday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620277949af5a",
+            "label": "Thursday - Closing Hour",
+            "name": "thursday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Thursday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620277c014d8c",
+            "label": "Friday - Opening Hour",
+            "name": "friday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Friday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620277c314d8d",
+            "label": "Friday - Closing Hour",
+            "name": "friday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Friday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_6202783c0c353",
+            "label": "Saturday - Opening Hour",
+            "name": "saturday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Saturday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_620278400c354",
+            "label": "Saturday - Closing Hour",
+            "name": "saturday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Saturday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_6202787279602",
+            "label": "Sunday - Opening Hour",
+            "name": "sunday_opening_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Sunday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_6202787679603",
+            "label": "Sunday - Closing Hour",
+            "name": "sunday_closing_hour",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027427aea81",
+                        "operator": "==",
+                        "value": "Sunday"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_62027a107eaa6",
+            "label": "Geo Coordinates",
+            "name": "geo_coordinates",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_620279e47eaa4",
+            "label": "Latitude",
+            "name": "latitude",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027a107eaa6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620279f87eaa5",
+            "label": "Longitude",
+            "name": "longitude",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620268ebd11e9",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_62027a107eaa6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-rich-snippets"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1644401978
+}

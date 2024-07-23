@@ -1,0 +1,107 @@
+.contact-us {
+  &__form {
+    height: 100%;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 75px;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+
+      @include media-breakpoint-down(xl) {
+        padding: 50px 35px;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 40px 20px;
+      }
+
+      .title-block {
+        margin-bottom: 45px;
+
+        @include media-breakpoint-down(xl) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    form {
+      .form-field {
+
+        .form-control {
+          border: none;
+          border-bottom: 1px solid $white;
+          font-size: 16px;
+          line-height: 1;
+          background: transparent;
+          border-radius: 0;
+          color: #fff;
+          padding: 15px 0;
+          height: 50px;
+
+          @include placeholder {
+            color: #fff;
+          }
+
+          &:hover,
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .btn-wrapper {
+        padding-top: 15px;
+
+        .btn {
+          font-size: 14px;
+          letter-spacing: 2.8px;
+          line-height: 1;
+        }
+      }
+    }
+
+    .location-block {
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.20);
+      margin-top: 60px;
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-down(xl) {
+        margin-top: 45px;
+      }
+
+      .text-wrapper {
+        margin-left: 10px;
+        text-transform: capitalize;
+
+        p {
+          @include media-breakpoint-down(md) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .image-wrapper {
+    height: 100%;
+    position: relative;
+    min-height: 742px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 392px;
+    }
+
+    .image-ratio {
+      padding-top: 0;
+      position: static;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.about-description {
+  padding: 80px 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 455px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: none;
+    }
+
+    .image-ratio {
+      padding-top: 84%;
+    }
+  }
+
+  &__block {
+    padding-left: 68px;
+
+    @include media-breakpoint-down(xl) {
+      padding-left: 38px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+      padding-top: 40px;
+      width: 100%;
+      max-width: 630px;
+    }
+  }
+}

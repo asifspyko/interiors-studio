@@ -1,0 +1,36 @@
+.our-portfolio {
+  .portfolio-block {
+    .image-wrapper {
+      position: relative;
+      .image-ratio {
+        padding-top: 101%;
+      }
+
+      .image-caption {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(48, 48, 53, .6);
+        opacity: 0;
+        transition: .3s all ease;
+
+        p {
+          letter-spacing: 3.2px;
+          text-transform: uppercase;
+        }
+      }
+
+      &:hover {
+        .image-caption {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

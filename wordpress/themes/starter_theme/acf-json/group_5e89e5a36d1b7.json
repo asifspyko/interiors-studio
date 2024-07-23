@@ -1,0 +1,466 @@
+{
+    "key": "group_5e89e5a36d1b7",
+    "title": "Settings – Spacing",
+    "fields": [
+        {
+            "key": "field_5e89e5e385199",
+            "label": "<span class=\"dashicons dashicons-image-flip-vertical\"><\/span> Spacing",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e89ede665027",
+            "label": "Mode",
+            "name": "settings_spacing_mode",
+            "type": "button_group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "simple": "Simple",
+                "advanced": "Advanced"
+            },
+            "allow_null": 0,
+            "default_value": "simple",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5e89e5b5bfbfa",
+            "label": "Spacing",
+            "name": "settings_spacing_rwd",
+            "type": "section_styles",
+            "instructions": "Spacing for desktop screens in pixels. Spacing for smaller screens will be calculated automatically.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "simple"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "padding_top": "",
+            "padding_right": "",
+            "padding_bottom": "",
+            "padding_left": ""
+        },
+        {
+            "key": "field_5e89ee33b562d",
+            "label": "<span class=\"dashicons dashicons-smartphone\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8a26b1852f7",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-info",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "< 480px",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5e89ee65b5631",
+            "label": "Spacing",
+            "name": "settings_spacing_mobile",
+            "type": "section_styles",
+            "instructions": "Spacing for mobile screens (in pixels).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "padding_top": "",
+            "padding_right": "",
+            "padding_bottom": "",
+            "padding_left": ""
+        },
+        {
+            "key": "field_5e89ee47b562e",
+            "label": "<span class=\"dashicons dashicons-tablet\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8a27ead7a21",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-info",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "768px - 991px",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5e89ee7fb5632",
+            "label": "Spacing",
+            "name": "settings_spacing_sm",
+            "type": "section_styles",
+            "instructions": "Spacing for tablet screens (in pixels).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "padding_top": "",
+            "padding_right": "",
+            "padding_bottom": "",
+            "padding_left": ""
+        },
+        {
+            "key": "field_5e89ee50b562f",
+            "label": "<span class=\"dashicons dashicons-laptop\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8a2809d7a22",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-info",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "992px - 1199px",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5e89ee95b5633",
+            "label": "Spacing",
+            "name": "settings_spacing_md",
+            "type": "section_styles",
+            "instructions": "Spacing for tablet in portrait mode and small laptops screens (in pixels).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "padding_top": "",
+            "padding_right": "",
+            "padding_bottom": "",
+            "padding_left": ""
+        },
+        {
+            "key": "field_5e89ee57b5630",
+            "label": "<span class=\"dashicons dashicons-desktop\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8a2817d7a23",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-info",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "1200px - 1499px",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5e89eeb6b5634",
+            "label": "Spacing",
+            "name": "settings_spacing_lg",
+            "type": "section_styles",
+            "instructions": "Spacing for tablet - desktop screens (in pixels).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "padding_top": "",
+            "padding_right": "",
+            "padding_bottom": "",
+            "padding_left": ""
+        },
+        {
+            "key": "field_5e8a267ac28b3",
+            "label": "<span class=\"dashicons dashicons-welcome-view-site\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8a2831d7a24",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-info",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "1500px - ∞",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5e8a2685c28b4",
+            "label": "Spacing",
+            "name": "settings_spacing_xl",
+            "type": "section_styles",
+            "instructions": "Spacing for tablet - desktop screens (in pixels).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e89ede665027",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "padding_top": "",
+            "padding_right": "",
+            "padding_bottom": "",
+            "padding_left": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "<strong>Padding and margin settings for the block.<\/strong> <br>It's cloned into \"Settings - All\" group. <br>Do not remove this group.",
+    "modified": 1637239719
+}

@@ -1,0 +1,9 @@
+.content-with-bg {
+  .content-block {
+    &__sm {
+      width: 100%;
+      max-width: 1005px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+// Fonts Fallback
+
+$typographic-font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Oxygen-Sans,
+Ubuntu,
+Cantarell,
+"Helvetica Neue",
+serif,
+sans-serif;
+
+// Fonts
+$body_font: 'Roboto',
+$typographic-font-family;
+$heading_font: 'Playfair Display',
+$typographic-font-family;
+$secondary_font: 'Roboto Condensed',
+$typographic-font-family;
+$font_awesome: 'Font Awesome 6 Free';
+
+// Color pallets
+$transparent: rgba(0, 0, 0, 0);
+$white: #fff;
+$black: #000;
+$gray: #65666A;
+$green: #96C93D;
+$blue: #69CCE0;
+$light_blue: #E8E9EB;
+$light_gray: #D0D1D3;
+
+$theme-colors: ( //
+  primary: $green,
+  secondary: $gray,
+  light: $light_blue,
+  // success: $green,
+  //   warning: $yellow,
+  //   danger: $orange,
+  //   dark: $black
+) !default;
+
+$colors: () !default;
+
+$colors: map-merge(( //
+    "white": $white,
+    "black": $black,
+    "gray": $gray,
+    "green": $green,
+    "blue": $blue,
+    "light-gray": $light_gray,
+    "light-blue": $light_blue,
+  ),
+  $colors);
+
+$theme-colors: map-merge(( //
+    "white": $white,
+    "black": $black,
+    "gray": $gray,
+    "green": $green,
+    "blue": $blue,
+    "light-gray": $light_gray,
+    "light-blue": $light_blue,
+  ),
+  $theme-colors);
+
+
+// Bootstrap Overrides
+$enable-caret: false;
+$font-size-base: 1rem !default;
+// $h1-font-size: $font-size-base * 5 !default;
+// $h2-font-size: $font-size-base * 3 !default;
+// $h3-font-size: $font-size-base * 2 !default;
+// $h4-font-size: $font-size-base * 1.5 !default;
+$form-floating-label-opacity: .8 !default;
+$form-floating-label-transform: scale(.85) translateY(-1rem) translateX(.15rem) !default;
+$enable-negative-margins: true !default;
+$border-radius: 6px;
+$body-color: $black;
+// $transition-collapse: height .4s ease;
+$component-active-bg: $black;

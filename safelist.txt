@@ -1,0 +1,36 @@
+text-white 
+text-base-txt 
+justify-center 
+justify-start 
+justify-end 
+text-left 
+text-center 
+text-right 
+font-black 
+font-medium 
+font-semibold 
+font-normal 
+font-bold
+bg-bottom
+bg-center
+bg-left
+bg-left-bottom
+bg-left-top
+bg-right
+bg-right-bottom
+bg-right-top
+bg-top
+bg-repeat
+bg-no-repeat
+bg-repeat-x
+bg-repeat-y
+bg-repeat-round
+bg-repeat-space
+bg-auto
+bg-cover
+bg-contain
+bg-fixed
+bg-local
+bg-scroll
+hidden xs:hidden sm:hidden md:hidden lg:hidden xl:hidden
+block xs:block sm:block md:block lg:block xl:block

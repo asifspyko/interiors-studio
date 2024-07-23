@@ -1,0 +1,28 @@
+.our-services {
+  &__block {
+    height: 100%;
+
+    @include media-breakpoint-down(lg) {
+      padding: 20px 0;
+    }
+
+    &--inner {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      height: 100%;
+
+      @include media-breakpoint-down(xxl) {
+        padding: 30px 20px;
+      }
+
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      ul {
+        @extend .list-default;
+      }
+    }
+  }
+}
