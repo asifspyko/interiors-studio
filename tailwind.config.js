@@ -5,8 +5,8 @@ module.exports = {
   mode: 'jit',
   purge: [
     './src-static/**/*.html',
-    './wordpress/themes/starter_theme/**/*.php', 
-    './wordpress/themes/starter_theme/**/*.html', 
+    './wordpress/themes/interiors_studio/**/*.php', 
+    './wordpress/themes/interiors_studio/**/*.html', 
     'src-assets/js/**/*.js',
     'safelist.txt'
   ],

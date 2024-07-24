@@ -39,7 +39,7 @@ try {
   // Default enviroment setup (in most cases for deployment)
   var isStatic = false; // Static website
   var isWP = true; // WordPress Project
-  var templateNameWP = 'starter_theme';
+  var templateNameWP = 'interiors-studio';
 }
 
 // Local server
@@ -270,7 +270,7 @@ function watchSource() {
   watch('src-assets/sass-global/**/*.+(sass|scss)', series(styles));
   watch(['src-assets/sass-separate-files/**/*.+(sass|scss)'], series(styles_separate));
   watch(['src-static/**/*.html'], series(html));
-  watch(['wordpress/themes/starter_theme/**/*.php', 'src-static/**/*.html'], series(styles));
+  watch(['wordpress/themes/interiors_studio/**/*.php', 'src-static/**/*.html'], series(styles));
   watch('tailwind.config.js', series(styles));
   watch('src-assets/sass/admin-acf-blocks.sass', series(stylesAdminACFBlocks));
   watch(['src-assets/sass/admin-global.sass', 'src-assets/sass/editor-styles.scss'], series(stylesAdminGlobal));

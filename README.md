@@ -3,19 +3,19 @@
 1. Create new empty repository for your new project.
 2. Copy repository to your computer.
 3. Copy all files from Starter repository (this one) to the new repository for your project (you can bypass `.gitlab-ci.yml` file if you are using custom deployment method).
-4. Change the name of theme folder in `/wordpress/themes/` from `starter_theme` to your custom name.
+4. Change the name of theme folder in `/wordpress/themes/` from `interiors_studio` to your custom name.
 5. Run `Search and replace` on the whole project with `Case sensitive` and `Whole word` options enabled. Here is the list of required replaces:
-  * Replace `PROJECT_NAME`
+  * Replace `interiors-studio`
   * Replace `PROJECT_AUTHOR`
   * Replace `PROJECT_VERSION`
   * Replace `PROJECT_AUTHOR_URL`
   * Replace `PROJECT_DATE`
   * Replace `PROJECT_DESCRIPTION`
-  * Replace `project_name` (lowercase with underscores instead of spaces or dashes)
-  * Replace `starter_theme` (your custom theme directory name)
+  * Replace `interiors-studio` (lowercase with underscores instead of spaces or dashes)
+  * Replace `interiors_studio` (your custom theme directory name)
 
   Run another `Search and replace` on the whole project with `Case sensitive` option enabled only.
-  * Replace `starter_theme_` (lowercase with underscores instead of spaces or dashes which must end with `_`)
+  * Replace `interiors_studio_` (lowercase with underscores instead of spaces or dashes which must end with `_`)
 6. Commit everything to your new repository
 7. Install WordPress on your computer ([Local app](https://localwp.com/) recommended)
 8. Install necessary plugins for the project. Here is the list of the recommended plugins:
