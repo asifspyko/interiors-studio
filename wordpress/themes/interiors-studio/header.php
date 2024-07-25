@@ -61,20 +61,31 @@
                 ?>
               </div>
             </div>
-            <div class="social-icons">
-              <ul class="list-reset d-flex">
-                <li>
-                  <a href="#" class="adjust-icon">
-                  <?php get_template_part('template-parts/svgs/svg-icon', 'instagram'); ?>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="adjust-icon">
-                  <?php get_template_part('template-parts/svgs/svg-icon', 'linkedin'); ?>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <?php
+             // Social Media
+          if (have_rows('social_media_profiles', 'option')) {
+            echo '<div class="social-icons"> <ul class="list-reset d-flex">';
+
+            while (have_rows('social_media_profiles', 'option')) {
+              the_row();
+
+              $icon = get_sub_field('icon');
+              $link = get_sub_field('link');
+
+              if (get_sub_field('open_in_the_new_window')) {
+                $target = 'target="_blank"';
+              }
+
+              echo '<li><a href="' . esc_url($link) . '"' . $target . 'class="adjust-icon">';
+              echo get_template_part('template-parts/svgs/svg-icon', $icon);
+              echo '</a></li>';
+            }
+
+            echo '</ul></div>';
+          }
+          ?>
+
+            
           </div>
         </div>
       </div>

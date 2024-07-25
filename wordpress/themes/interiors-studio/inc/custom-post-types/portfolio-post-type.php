@@ -36,7 +36,7 @@ function portfolio_post_type()
     'menu_position' => null,
     'exclude_from_search' => false,
     'show_in_rest' => false,
-    'supports' => array('title', 'thumbnail', 'custom-fields', 'excerpt'),
+    'supports' => array('title', 'thumbnail', 'custom-fields'),
   );
 
   register_post_type('portfolio', $ags);

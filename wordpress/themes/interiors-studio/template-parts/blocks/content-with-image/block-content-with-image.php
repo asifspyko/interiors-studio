@@ -9,56 +9,54 @@
   if(!$block_disabled && empty( $block['data']['block_preview_img'])):
 
   if( !empty( $block['data']['block_preview_img'] ) ) echo '<img src="' . get_template_directory_uri() . '/assets/img/block-preview/' . $block['data']['block_preview_img'] . '" alt="">';
+
+  $reverse_column = (get_field('reverse_column')) ? 'image-with-content__alt' : '' ;
 ?>
 
-<section class="image-with-content">
+<section class="image-with-content <?php echo $reverse_column; ?>">
   <div class="container-xl px-0">
     <div class="row g-0">
-      <div class="col-lg-6">
-        <div class="content-block">
-          <div class="content-block__inner text-center">
-            <h6 class="sub-heading">our process</h6>
-            <h2>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</h2>
-            <div class="btn-wrapper">
-              <a href="#" class="btn btn-outline-secondary">our services</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="image-wrapper">
-          <div class="image-ratio image-ratio--square">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/image-with-content--home.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      <?php
 
-<section class="image-with-content image-with-content__alt">
-  <div class="container-xl px-0">
-    <div class="row g-0">
-      <div class="col-lg-6">
-        <div class="content-block bg-secondary">
-          <div class="content-block__inner text-white">
-            <h6 class="sub-heading">our team</h6>
-            <h2>Cras mattis consectetur purus sit amet.</h2>
-            <p>The Interiors Studio, LLC is a Women-Owned Business Enterprise in Atlanta, Georgia specializing in
-              commercial, hospitality and senior living interior design.  Our team of principals and project designers
-              has a combined total of over 90 years of experience in commercial interior design and we are fortunate to
-              have worked with talented architects and other design professionals on a variety of projects in many
-              different locations.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="image-wrapper">
-          <div class="image-ratio image-ratio--square">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/image-with-content--about.png" alt="">
-          </div>
-        </div>
-      </div>
+      $sub_title = get_field('sub_title');
+      $title = get_field('title');
+      $content = get_field('content');
+      $button = get_field('button');
+
+      $background_color = get_field('background_color');
+      $text_color = get_field('text_color');
+      $content_alignment = get_field('content_alignment');
+
+      if ($sub_title || $title || $content || $button){
+        echo '<div class="col-lg-6"><div class="content-block ' . $background_color . '"><div class="content-block__inner ' . $content_alignment . ' ' . $text_color . '">';
+
+        if ($sub_title){
+          echo '<h6 class="sub-heading">' . $sub_title . '</h6>';
+        }
+        if ($title){
+          echo '<h2>' . $title . '</h2>';
+        }
+        if ($content){
+          echo '<p>' . $content . '</p>';
+        }
+        if ($button){
+          $target = ($button['target']) ? 'target="_blank"' : '';
+          echo '<div class="btn-wrapper">';
+          echo '<a href="' . $button['url'] . '" class="btn btn-outline-secondary" ' . $target . '>' . $button['title'] . '</a>';
+          echo '</div>';
+        }
+
+        echo '</div></div></div>';
+      }
+
+      if ($image = get_field('image')){
+        echo '<div class="col-lg-6"><div class="image-wrapper"><div class="image-ratio image-ratio--square">';
+        echo wp_get_attachment_image($image, 'full', false, ['class' => 'full']);
+        echo '</div></div></div>';
+      }
+      ?>
+
+       
     </div>
   </div>
 </section>
