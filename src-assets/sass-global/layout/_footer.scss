@@ -13,6 +13,32 @@
         margin-bottom: 40px;
       }
     }
+    &:last-child {
+      a {
+        &.anchor-block {
+
+          .icon-wrap {
+            svg {
+              path {
+                @include not-last {
+                  fill: $blue;
+                }
+              }
+            }
+          }
+
+          .text-wrapper {
+            @include media-breakpoint-down(md) {
+              word-break: break-all;
+            }
+          }
+
+          &:hover {
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
   }
 
   &__links {

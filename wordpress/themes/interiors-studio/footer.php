@@ -79,7 +79,9 @@
               }
 
               echo '<li><a href="' . esc_url($link) . '"' . $target . 'class="anchor-block">';
-              echo '<div class="icon-wrap adjust-icon">' . get_template_part('template-parts/svgs/svg-icon', $icon) . '</div>';
+              echo '<div class="icon-wrap adjust-icon">';
+              get_template_part('template-parts/svgs/svg-icon', $icon);
+              echo '</div>';
               if ($name) {
                 echo '<div class="text-wrapper">' . $name . '</div>';
               }

@@ -156,8 +156,8 @@
         },
         {
             "key": "field_66a26bb33f3a6",
-            "label": "Reverse Column",
-            "name": "reverse_column",
+            "label": "Padding",
+            "name": "padding",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -272,5 +272,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721929282
+    "modified": 1722273134
 }

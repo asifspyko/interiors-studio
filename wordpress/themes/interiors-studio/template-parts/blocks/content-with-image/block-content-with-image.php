@@ -10,10 +10,10 @@
 
   if( !empty( $block['data']['block_preview_img'] ) ) echo '<img src="' . get_template_directory_uri() . '/assets/img/block-preview/' . $block['data']['block_preview_img'] . '" alt="">';
 
-  $reverse_column = (get_field('reverse_column')) ? 'image-with-content__alt' : '' ;
+  $padding = (get_field('padding')) ? 'image-with-content__alt' : '' ;
 ?>
 
-<section class="image-with-content <?php echo $reverse_column; ?>">
+<section class="image-with-content <?php echo $padding; ?>">
   <div class="container-xl px-0">
     <div class="row g-0">
       <?php

@@ -13,7 +13,6 @@ if (!$block_disabled && empty($block['data']['block_preview_img'])):
 
   $title = get_field('title');
   $button = get_field('button');
-
   ?>
 
   <section class="hero">
@@ -26,12 +25,10 @@ if (!$block_disabled && empty($block['data']['block_preview_img'])):
     }
 
     if ($title || $button) {
-      
       echo '<div class="container"><div class="content-block text-white">';
       if ($title) {
         echo '<h1>' . $title . '</h1>';
       }
-
       if ($button) {
         $target = ($button['target']) ? 'target="_blank"' : '';
         echo '<div class="btn-wrapper">';

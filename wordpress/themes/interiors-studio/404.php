@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-<div id="primary" class="l-wrap">
-	<main id="main" class="site-main py-8 sm:py-12 lg:py-35">
-		<div class="bg-white min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+<section class="about-description">
+  <div class="container">
+    <div class="row align-items-center">
 			<div class="max-w-max mx-auto">
 				<main class="sm:flex">
 				  <p class="my-0 c-title c-title--large text-brand -mb-2 sm:mb-0">404</p>
@@ -34,9 +34,9 @@ get_header(); ?>
           </div>
 				</main>
 			</div>
-		</div>
-	</main><!-- #main -->
-</div><!-- #primary -->
+	</div>
+  </div>
+  </section>
 
 <?php
 get_footer();
