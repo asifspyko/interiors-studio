@@ -1,0 +1,70 @@
+{
+    "key": "group_5e89f2635d4e3",
+    "title": "Settings - Visibility",
+    "fields": [
+        {
+            "key": "field_5e89f276e40f6",
+            "label": "<span class=\"dashicons dashicons-visibility\"><\/span> Visibility",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8ae6a0d26eb",
+            "label": "Hide block on:",
+            "name": "settings_visibility",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "mobile": "<span class=\"dashicons dashicons-smartphone\"><\/span>",
+                "sm": "<span class=\"dashicons dashicons-tablet\"><\/span>",
+                "md": "<span class=\"dashicons dashicons-laptop\"><\/span>",
+                "lg": "<span class=\"dashicons dashicons-desktop\"><\/span>",
+                "xl": "<span class=\"dashicons dashicons-welcome-view-site\"><\/span>"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "<strong>Hide\/show block on various breakpoints.<\/strong> <br>It's cloned into \"Settings - All\" group. <br>Do not remove this group.",
+    "modified": 1637239639
+}

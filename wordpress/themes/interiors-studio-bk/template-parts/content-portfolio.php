@@ -32,7 +32,7 @@ $images = $gallery['images'];
       <p class="copy-sm mb-4"><?php echo esc_html($excerpt); ?></p>
       <p><?php echo wp_kses_post($description); ?></p>
     </div>
-  
+    <div class="row row-gutters-10">
     <?php if ($images): ?>
     <div class="row row-gutters-10">
         <?php foreach ($images as $image): 
@@ -56,6 +56,6 @@ $images = $gallery['images'];
     </div>
 <?php endif; ?>
 
-  
+    </div>
   </div>
 </section>

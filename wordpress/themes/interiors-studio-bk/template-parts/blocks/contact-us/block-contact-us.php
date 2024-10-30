@@ -17,7 +17,6 @@
       <?php
 
       $title = get_field('title'); 
-	  $sub_title = get_field('sub_title'); 
       $select_form = get_field('select_form'); 
       $address = get_field('address'); 
 
@@ -28,15 +27,8 @@
         echo '<div class="col-lg-6"><div class="contact-us__form ' . $background_color . '"><div class="contact-us__form__inner ' . $text_color . '">';
 
         echo '<div class="form-wrapper">';
-        if ($title || $sub_title){
-          echo '<div class="title-block">';
-		  if ($title){
-			echo '<h2>' . $title . '</h2>';
-		  }
-		  if ($sub_title){
-			echo '<h4 class="mt-4">' . $sub_title . '</h4>';
-		  }
-		  echo '</div>';
+        if ($title){
+          echo '<div class="title-block"><h2>' . $title . '</h2></div>';
         }
         if ($select_form){
           echo do_shortcode('[contact-form-7 id="' . $select_form . '"]');

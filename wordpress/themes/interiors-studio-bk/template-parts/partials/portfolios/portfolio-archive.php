@@ -2,21 +2,19 @@
   <div class="container">
     <div class="row row-gutters-20">
     <?php
-		$args = array(
-		  'post_type' => 'portfolio',
-		  'posts_per_page' => -1,
-		  'meta_key' => 'content_excerpt', 
-		  'orderby' => 'meta_value', 
-		  'order' => 'DESC'
-		);
+    $args = array(
+        'post_type' => 'portfolio',
+        'posts_per_page' => -1
+
+    );
+
     
-		$portfolio = new WP_Query($args);
-		if ($portfolio->have_posts()):
-		   $number = 1;
-			while ($portfolio->have_posts()): $portfolio->the_post() ;
-			$portfolio_type = get_field('content_portfolio_type', get_the_ID());
-		?>
-      <div class="col-lg-4 col-md-6 py-3 my-1 portfolio-<?php echo $number; ?>">
+    $portfolio = new WP_Query($args);
+    if ($portfolio->have_posts()):
+        while ($portfolio->have_posts()): $portfolio->the_post() ;
+        $portfolio_type = get_field('content_portfolio_type', get_the_ID());
+    ?>
+      <div class="col-lg-4 col-md-6 py-3 my-1">
         <div class="portfolio-block">
           <a href="<?php the_permalink(); ?>" class="image-wrapper">
           <?php if (has_post_thumbnail()): ?>
@@ -35,7 +33,6 @@
         </div>
       </div>
       <?php 
-		$number++;
     endwhile;
     endif;
      ?>
