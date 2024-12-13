@@ -1,0 +1,201 @@
+{
+    "key": "group_5e89f23f4b91b",
+    "title": "Settings - Background",
+    "fields": [
+        {
+            "key": "field_5e89f28b88504",
+            "label": "<span class=\"dashicons dashicons-admin-appearance\"><\/span> Background",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e8ad081bb9d6",
+            "label": "Background Color",
+            "name": "settings_background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5e8ad0c0bb9d7",
+            "label": "Background Image",
+            "name": "settings_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e8ad2fcf9d18",
+            "label": "Background Position",
+            "name": "settings_background_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bottom": "Bottom",
+                "center": "Center",
+                "left": "Left",
+                "left-bottom": "Left Bottom",
+                "left-top": "Left Top",
+                "right": "Right",
+                "right-bottom": "Right Bottom",
+                "right-top": "Right Top",
+                "top": "Top"
+            },
+            "default_value": "center",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e8ad2102ae2a",
+            "label": "Background Repeat",
+            "name": "settings_background_repeat",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "repeat": "Repeat",
+                "no-repeat": "No repeat",
+                "repeat-x": "Repeat Horizontally",
+                "repeat-y": "Repeat Vertically",
+                "repeat-round": "Repeat round",
+                "repeat-space": "Repeat space"
+            },
+            "default_value": "no-repeat",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e8ad2562ae2b",
+            "label": "Background size",
+            "name": "settings_background_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "auto": "Auto",
+                "cover": "Cover",
+                "contain": "Contain"
+            },
+            "default_value": "cover",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e8ade53f1ec8",
+            "label": "Background attachment",
+            "name": "settings_background_attachment",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "fixed": "Fixed",
+                "local": "Local",
+                "scroll": "Scroll"
+            },
+            "default_value": "scroll",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "<strong>Background settings for blocks.<\/strong> <br>It's cloned into \"Settings - All\" group. <br>Do not remove this group.",
+    "modified": 1637239042
+}

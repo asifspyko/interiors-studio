@@ -25,6 +25,11 @@
         @include media-breakpoint-down(xl) {
           margin-bottom: 30px;
         }
+
+        h2 {
+          font-size: 37px;
+          @extend .font-mate;
+        }
       }
     }
 

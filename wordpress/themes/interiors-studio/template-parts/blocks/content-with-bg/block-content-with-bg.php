@@ -23,10 +23,10 @@
         echo '<div class="content-block content-block__sm text-center ' . $text_color . '">';
 
         if ($sub_title){
-          echo '<h6 class="sub-heading mb-3 pb-1">' . $sub_title . '</h6>';
+          echo '<h6 class="sub-heading font-secondary mb-3 pb-1">' . $sub_title . '</h6>';
         }
         if ($title){
-          echo '<h2>' . $title . '</h2>';
+          echo '<p class="copy-lg font-mate">' . $title . '</p>';
         }
         echo '</div>';
       }

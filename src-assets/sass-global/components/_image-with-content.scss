@@ -27,9 +27,13 @@
         margin-bottom: 10px;
       }
 
-      h2 {
+      h2,
+      h3,
+      h4,
+      h5 {
         padding-bottom: 40px;
         line-height: 1.1;
+        @extend .font-mate; 
 
         @include media-breakpoint-down(md) {
           padding-bottom: 20px;

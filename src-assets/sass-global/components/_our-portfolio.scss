@@ -4,6 +4,9 @@
       position: relative;
       .image-ratio {
         padding-top: 101%;
+        img {
+          object-position:20% center;
+        }
       }
 
       .image-caption {
@@ -19,6 +22,14 @@
         background-color: rgba(48, 48, 53, .6);
         opacity: 0;
         transition: .3s all ease;
+        padding: 20px;
+        text-align: center;
+
+        h3 {
+          line-height: 1.2;
+          margin-bottom: 10px;
+          @extend .font-mate;
+        }
 
         p {
           letter-spacing: 3.2px;

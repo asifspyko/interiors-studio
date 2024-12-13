@@ -61,12 +61,24 @@ function register_acf_block_types() {
       'category'           => ['custom-theme', 'interiors-studio', 'acf-theme' ],
       'block_preview_img'  => 'block.jpg'
     ],
+	 [
+      'name'               => 'our-team',
+      'title'              => 'Our Team',
+      'category'           => ['custom-theme', 'interiors-studio', 'acf-theme' ],
+      'block_preview_img'  => 'block.jpg'
+    ],
     [
         'name'               => 'generic-content',
         'title'              => 'Generic Content',
         'category'           => ['custom-theme', 'interiors-studio', 'acf-theme' ],
         'block_preview_img'  => 'block.jpg'
-      ],
+    ],
+    [
+      'name'               => 'gallery',
+      'title'              => 'Gallery',
+      'category'           => ['custom-theme', 'interiors-studio', 'acf-theme' ],
+      'block_preview_img'  => 'block.jpg'
+    ],
     
   ];
 
@@ -110,4 +122,3 @@ function ct_validate_save_post() {
     }
   }
 }
-

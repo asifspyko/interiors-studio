@@ -1,0 +1,81 @@
+{
+    "key": "group_5fb38cd67c5c0",
+    "title": "Block - Container",
+    "fields": [
+        {
+            "key": "field_5fb38cd6848f1",
+            "label": "<span class=\"dashicons dashicons-admin-home\"><\/span> Main",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fb38d3b489cc",
+            "label": "Message",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "Wrapper for other blocks. Useful for making the same background for a few blocks.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5fb38cd684914",
+            "label": "Settings - All",
+            "name": "settings_all",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "clone": [
+                "group_5e8cce4aa55a3"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/container"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "<strong>Container block should be used to wrap other blocks.<\/strong> <br>It has all settings from our custom Settings tab. You can use it for example to set one background for group of blocks. It more powerful than default Group functionality provided with block editor.",
+    "modified": 1637752096
+}

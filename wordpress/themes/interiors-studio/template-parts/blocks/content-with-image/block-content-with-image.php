@@ -34,10 +34,10 @@
           echo '<h6 class="sub-heading">' . $sub_title . '</h6>';
         }
         if ($title){
-          echo '<h2>' . $title . '</h2>';
+          echo '<h3>' . $title . '</h3>';
         }
         if ($content){
-          echo '<p>' . $content . '</p>';
+          echo '<p class="copy-lg">' . $content . '</p>';
         }
         if ($button){
           $target = ($button['target']) ? 'target="_blank"' : '';

@@ -155,7 +155,7 @@
               bottom: 0;
               height: 3px;
               width: 0;
-              background-color: $green;
+               background-color: #69CCE0;
               @extend .transition;
             }
 
@@ -209,7 +209,7 @@
             }
 
             &:hover {
-              color: $green;
+              color: #69CCE0;
             }
           }
         }

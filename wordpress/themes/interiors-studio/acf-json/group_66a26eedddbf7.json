@@ -40,6 +40,26 @@
             "append": ""
         },
         {
+            "key": "field_66cf4feefe43c",
+            "label": "Sub Title",
+            "name": "sub_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66a26f1bcb024",
             "label": "Select Form",
             "name": "select_form",
@@ -67,7 +87,7 @@
             "label": "Address",
             "name": "address",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -78,9 +98,9 @@
             },
             "default_value": "",
             "maxlength": "",
+            "rows": 2,
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": "br"
         },
         {
             "key": "field_66a26f3bcb026",
@@ -212,5 +232,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721924740
+    "modified": 1724862631
 }

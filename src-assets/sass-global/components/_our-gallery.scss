@@ -1,0 +1,20 @@
+.our-gallery {
+  padding: 40px 0;
+
+  &__grid {
+    margin: 0 -20px;
+  }
+
+  .grid-item {
+    width: 33.3%;
+    padding: 20px;
+
+    @include media-breakpoint-down(lg) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}

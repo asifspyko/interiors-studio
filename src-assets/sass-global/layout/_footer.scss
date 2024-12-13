@@ -42,9 +42,11 @@
   }
 
   &__links {
-    height: 100%;
-    width: 100%;
-    max-width: 535px;
+      height: 100%;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
 
     &--inner {
       padding: 20px 30px;
