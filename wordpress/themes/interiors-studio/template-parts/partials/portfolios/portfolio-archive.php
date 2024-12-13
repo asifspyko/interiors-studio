@@ -1,5 +1,21 @@
-<section class="our-portfolio py-66">
+<?php
+$hero = get_field('archive_hero', 'option');
+$bg_color = $hero['background_color'];
+$text_color = $hero['text_color'];
+$content = $hero['content'];
+
+if ($content) :
+?>
+<section class="content-with-bg py-80 archive-banner <?php echo $bg_color; ?>">
   <div class="container">
+    <div class="content-block text-center <?php echo $text_color; ?>">
+      <h3><?php echo $content; ?></h3>
+  </div>  
+    </div>
+  </section>
+  <?php endif; ?>
+<section class="our-portfolio py-66">
+<div class="container">
     <div class="row row-gutters-20">
     <?php
 		$args = array(

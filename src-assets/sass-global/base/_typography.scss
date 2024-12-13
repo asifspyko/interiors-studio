@@ -42,6 +42,10 @@
   font-family: $secondary_font;
 }
 
+.font-mate {
+  font-family: $font_mate;
+}
+
 a,
 .nav-link {
   transition: 0.2s all ease;
@@ -137,6 +141,15 @@ h6,
 
 p {
   margin: 0;
+}
+
+
+.copy-lg {
+  font-size: 20px;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 16px;
+  }
 }
 
 .copy-sm {
