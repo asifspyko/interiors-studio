@@ -54,6 +54,7 @@
     height: 100%;
     position: relative;
     min-height: 638px;
+    overflow: hidden;
 
     @include media-breakpoint-down(xl) {
       min-height: 450px;
@@ -62,10 +63,19 @@
     .image-ratio {
       padding-top: 0;
       position: static;
+
+      img{
+        transform: scale(1.005);
+      }
     }
   }
 
   &__alt {
+
+    .container-xl{
+      max-width: 100%;
+    }
+
     .content-block {
       &__inner {
         padding-top: 104px;

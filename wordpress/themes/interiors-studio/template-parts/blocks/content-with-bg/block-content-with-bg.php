@@ -17,6 +17,7 @@
 
       $sub_title = get_field('sub_title');
       $title = get_field('title');
+      $content = get_field('content');
       $text_color = get_field('text_color');
 
       if ($sub_title || $title){
@@ -26,7 +27,10 @@
           echo '<h6 class="sub-heading font-secondary mb-3 pb-1">' . $sub_title . '</h6>';
         }
         if ($title){
-          echo '<p class="copy-lg font-mate">' . $title . '</p>';
+          echo '<h3 class="font-mate mb-4">' . $title . '</h3>';
+        }
+        if ($content){
+          echo '<p class="copy-lg font-mate">' . $content . '</p>';
         }
         echo '</div>';
       }

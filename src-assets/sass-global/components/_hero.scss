@@ -5,7 +5,11 @@
   align-items: flex-end;
   justify-content: flex-end;
   min-height: 675px;
-  height: 75vh;
+  height: calc(100vh - 100px);
+
+  .container{
+
+  }
 
   .hero-image {
     img {
@@ -36,18 +40,27 @@
     position: relative;
     z-index: 2;
     text-align: right;
+    max-width: 100%;
 
     @include media-breakpoint-down(lg) {
       text-align: center;
+      padding: 0 20px;
     }
 
     h1 {
       margin-bottom: 40px;
+      font-size: 35px;
+      line-height: 120%;
+      letter-spacing: 0.35px;
+
+      @include media-breakpoint-down(md){
+        font-size: 32px;
+      }
     }
   }
 
   .content-block {
-    padding: 66px 0;
+    padding: 66px 46px;
 
     @include media-breakpoint-down(lg) {
       padding: 40px 0;
