@@ -110,3 +110,4 @@ function ct_validate_save_post() {
     }
   }
 }
+

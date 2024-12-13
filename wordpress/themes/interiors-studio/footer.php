@@ -18,7 +18,7 @@
 ?>
 
   </main>
-  <footer class="site-footer">
+<footer class="site-footer">
   <div class="site-footer__bg py-66" <?php echo $bg_image; ?>>
     <div class="container">
       <div class="row">
